@@ -1,0 +1,115 @@
+body{
+	margin: 0%;
+	font-family: 'Oleo Script Swash Caps', cursive;
+}
+p{
+	color: dimgray;
+}
+.wrapper {
+height: 1200px;
+width: 100%;
+
+}
+h1{
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+}
+.heighlight{
+    color:#52b5eb;
+}
+
+.header{
+    height: 400px;
+    background-repeat: no-repeat;
+    padding-bottom: 0%;
+}
+.logo,.banner{
+    width: 40%;
+    margin-left: 5%;
+    padding-left: 2%;
+    float:left;
+}
+
+.logo img{
+    width: 70%;
+    height: 100%;
+}
+
+/*------------------------------------ contact --------------------*/
+h2{
+    font-weight: bold;
+    text-decoration: none;
+
+}
+.contact{
+    height: 150px;
+}
+
+.contact img{
+    height: 70px;
+    width: 70px;
+
+}
+
+.contact li{
+    
+    float: left;
+    width: 10%;
+margin: 0px 6%;
+}
+
+
+
+/*------------------------------ end of  contact --------------------*/
+
+
+
+
+
+
+/* ----------------------------- menu -----------------------------*/
+.menu{
+height: 150px;
+width: 100%;
+text-align: center;
+
+}
+.menu ul li{
+float: left;
+width: 10%;
+margin: 0px 6%;
+
+
+}
+
+.menu ul li a{
+
+display: block;
+text-align: center;
+text-decoration: none;
+background-image: linear-gradient(50deg,rgb(87, 191, 247),rgb(52, 144, 194));
+border-radius: 10px;
+color: white;
+font-size: 25px;
+font-weight: bold;
+
+
+
+}
+
+
+
+
+
+
+/* ----------------------------- end of menu -----------------------------*/
+
+.footer{
+    text-align: center;
+    background-color:#e8eced;
+    color: #4d5fe3;
+    font-size: 22px;
+
+}
+
+/* ----------------------------- end of footer -----------------------------*/

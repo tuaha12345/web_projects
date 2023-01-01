@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>index php</title>
+</head>
+<body>
+     
+     <form>
+     	 Name : <input type="text" name="name">
+     	 Age : <input type="Number" name="age">
+     	 Email : <input type="text" name="email">
+
+     	 <input type="submit" name="submit" value="Submit">
+
+
+
+     </form>
+
+
+</body>
+</html>
+
+////////////////////////////////
+
+CREATE TABLE padu(
+    id int NOT NULL AUTO_INCREMENT,
+    name varchar(15),
+    age int,
+    email varchar(15),
+    PRIMARY KEY(id)
+);
+
+////////////////////////////////////
+
+<?php 
+    
+    $servername='localhost';
+    $username='root';
+    $password='';
+    $dbname = "hagu";
+
+    $conn=mysql_connect($servername,$username,$password,$dbname);
+
+    if(!$conn){
+    	die("Server not connected".mysql_error());
+    }
+
+
+
+
+?>
+
+////////////////////////////////////
+<?php
+
+include_once 'db.php';
+if(isset($_POST['submit']))
+{    
+     $name = $_POST['name'];
+     $age=$_POST['age'];
+     $email = $_POST['email'];
+     
+     $sql = "INSERT INTO padu (name,age,email)
+     VALUES ('$name','$age','$email')";
+     if (mysqli_query($conn, $sql)) {
+        echo "New record has been added successfully !";
+     } else {
+        echo "Error: " . $sql . ":-" . mysqli_error($conn);
+     }
+     mysqli_close($conn);
+}
+?>
+////////////////////////////
+

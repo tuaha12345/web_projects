@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home page</title>
+
+<link rel="stylesheet" type="text/css" href="CSS/home.css">
+<link rel="stylesheet" type="text/css" href="">
+
+</head>
+
+
+
+<body>
+    Number 1 <input type="text" id="num1"><br>
+    Number 2 <input type="text" id="num2"><br>
+    Result <input type="text" id="result"><br>
+    <input type="submit" id="add" value="add">
+
+    <script >
+        var plusElement = document.getElementById('add');
+        plusElement.onclick=function(){
+           var num1 = Number(document.getElementById('num1').value);
+            var num2 = Number(document.getElementById('num2').value);
+           
+            var result=num1+num2;
+             
+             
+
+            document.getElementById('result').value=result;
+
+        }
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

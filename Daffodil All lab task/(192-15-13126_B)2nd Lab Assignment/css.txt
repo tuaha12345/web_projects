@@ -1,0 +1,122 @@
+*{
+	box-sizing: border-box;
+	margin: 0%;
+	padding: 0%;
+}
+.wrapper{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.66%;}
+.col-5{width: 41.33%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+[class*='col-']{
+  float: left;
+  
+}
+
+/*--------------------------------- header -----------------------------*/
+.header{
+	height: 250px;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #232C32 ;
+}
+.details h1{
+	padding-top: 20px;
+
+}
+
+.logo{
+	height: 250px;
+}
+.logo img{
+	height: 100%;
+	width: 100%;
+}
+
+.details{
+	height: 250px;
+	background-image: url(../images/daffodil.jpg);
+	background-size: cover;
+	text-align: center;
+
+	
+}
+/*--------------------------------- menu -----------------------------*/
+
+.menu{
+
+	height: 350px;
+	
+
+}
+
+.home,.about,.contact{
+    padding-top: 30px;
+	text-align: center;
+	font-family: fantasy;
+	font-size: 30px;
+	
+}
+a{
+	text-decoration: none;
+	color:#35B0F1;
+}
+.menu a:hover {
+  color: blue;
+}
+/*--------------------------------- content -----------------------------*/
+
+.content{
+	height: 300px;
+	text-align: center;
+	
+	
+
+}
+.content img{
+   height: 300px;
+   width: 100%;
+}
+
+.para{
+
+	font-family: cursive;
+	
+}
+.para p{
+	color: dimgray;
+}
+.para h1{
+	color: #3F4549;
+}
+
+/*--------------------------------- bigfooter -----------------------------*/
+
+.bigfooter{
+	height: 200px;
+	text-align: center;
+
+}
+
+/*--------------------------------- footer -----------------------------*/
+
+.footer{
+	text-align: center;
+	height: 40px;
+}
+
+

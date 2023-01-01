@@ -1,0 +1,47 @@
+body{
+	text-align: center;
+	background-color: azure;
+	width: auto;
+	height: 1200px;
+}
+
+.insert{
+	background-color: gainsboro;
+	width: 40%;
+	margin-left: 27%;
+	margin-bottom: 5%;
+	border: 5px solid black;
+	border-radius: 20px;
+}
+
+.delete{
+	background-color:#fac3c5;
+	width: 40%;
+	margin-left: 27%;
+	margin-bottom: 5%;
+	border: 5px solid black;
+	border-radius: 20px;
+}
+
+
+.update{
+	background-color:#def5dc;
+	width: 40%;
+	margin-left: 27%;
+	margin-bottom: 5%;
+	border: 5px solid black;
+	border-radius: 20px;
+}
+
+.search{
+	background-color:#f5f4c6;
+	width: 40%;
+	margin-left: 27%;
+	margin-bottom: 5%;
+	border: 5px solid black;
+	border-radius: 20px;
+}
+
+.input{
+	background-color: #fcc57c;
+}

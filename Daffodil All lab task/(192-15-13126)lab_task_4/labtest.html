@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Class test</title>
+</head>
+<body>
+
+<form name="login" onsubmit="return valid() ">
+	User name: <input type="txt" name="username" id="username">
+	Password: <input type="password" name="password" id="password" >
+	<input type="submit" name="submit" value="Submit" id="submit">
+</form>
+<script type="text/javascript">
+
+   function valid()
+   {
+   	var username=document.login.username.value;
+   	var password=document.login.password.value;
+   	//document.write(username);
+
+   	if(username=="" || password==""){
+   		alert(" Fields should not be Empty");
+   	}
+
+   	if(password.length<3 || password.length>7)
+   	{
+       alert("password must be 3 to 6 character");
+   	}
+
+   	var first_letter=username[0];
+   	//document.write(first_letter);
+   	if(first_letter=="_"||first_letter=="@"||first_letter==0||first_letter==1||first_letter==2||first_letter==3||first_letter==4||first_letter==5||first_letter==6||first_letter==7||first_letter==8||first_letter==9)
+   	{
+   		alert("user name should not start with _,@,number");
+   	}
+
+
+
+
+   }
+	
+
+</script>
+</body>
+</html>

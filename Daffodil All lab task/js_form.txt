@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="practice.css">
+
+	<title>Practie</title>
+</head>
+
+<body>
+	 <script type="text/javascript" src="practice.js"></script>
+
+	  <form name="form" method="POST" onsubmit="return ff()">
+	  	  Name: <input type="text" name="name"><br><br>
+          Email: <input type="email" name="email"><br><br>
+          Password: <input type="password" name="password"><br><br>
+          <input type="submit" name="submit" value="Submit">
+	  </form>
+
+
+
+</body>
+</html>
+
+
+
+
+
+///////////////////////////////// js////////////////////////////////////
+function ff()
+{
+	var name=document.form.name.value;
+	var email=document.form.email.value;
+	var pass=document.form.password.value;
+	
+
+	if(name==""||email==""||pass=="")
+	{
+		alert("Plz fill up the empy field");
+		return;
+	}
+
+	if(pass.length<3 || pass.length>7){
+		alert("Password must be in (3 to 7 character)");
+		return;
+	}
+    
+    var first_latter=name[0];
+
+    if(first_latter=='1' || first_latter=='2' || first_latter=='3' || first_latter=='4' || first_latter=='5' || first_latter=='6' || first_latter=='7' || first_latter=='8' || first_latter=='9' || first_latter=='0' || first_latter=='@' || first_latter=='#' || first_latter=='$')
+    {
+    	alert("First latter of the name must not be start with latter or special character");
+    }
+
+   
+     
+     
+	//document.write(pass.length);
+}
